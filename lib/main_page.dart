@@ -3,6 +3,7 @@ import 'package:fluttergram/screens/feed_page.dart';
 import 'package:fluttergram/screens/profile.dart';
 import 'package:fluttergram/screens/follow.dart';
 import 'package:fluttergram/screens/camera.dart';
+import 'package:fluttergram/screens/search.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -15,10 +16,9 @@ class _MainPageState extends State<MainPage> {
 
   static List<Widget> _widgetOptions = <Widget>[
     FeedPage(),
-    Container(color: Colors.primaries[1],),
-    Container(color: Colors.primaries[2],),
+    Search(),
+    Container(),
     Follow(),
-    //Container(color: Colors.primaries[4],),
     Profile(),
   ];
 
