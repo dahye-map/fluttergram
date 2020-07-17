@@ -28,8 +28,6 @@ class _SignInFormState extends State<SignInForm> {
       Scaffold.of(context).showSnackBar(snackBar);
     }
 
-
-
     FlatButton _loginFacebook() {
       return FlatButton.icon(
         textColor: Colors.blue,
@@ -42,7 +40,6 @@ class _SignInFormState extends State<SignInForm> {
         label: Text('Login with Facebook'),
       );
     }
-
 
     InputDecoration getTextFieldDeco(String hint) {
       return InputDecoration(
@@ -143,11 +140,6 @@ class _SignInFormState extends State<SignInForm> {
         ],
       );
     }
-
-
-
-
-
 
     return Scaffold(
       resizeToAvoidBottomInset: true,
