@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttergram/widgets/signInForm.dart';
 
 class SignIn extends StatefulWidget {
   @override
@@ -48,6 +49,7 @@ class _SignInState extends State<SignIn> {
       body: SafeArea(
         child: Stack(
           children: <Widget>[
+            SignInForm(),
             _goToSignUpPageBtn(context),
           ],
         ),
