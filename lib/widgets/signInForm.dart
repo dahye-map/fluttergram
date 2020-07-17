@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttergram/constants/size.dart';
+import 'package:fluttergram/main_page.dart';
 
 class SignInForm extends StatefulWidget {
   @override
@@ -17,6 +18,7 @@ class _SignInFormState extends State<SignInForm> {
     _pwController.dispose();
     super.dispose();
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -99,6 +101,8 @@ class _SignInFormState extends State<SignInForm> {
         onPressed: () {
           if (_formKey.currentState.validate()) {
             // 정상
+            final route = MaterialPageRoute(builder: (context) => MainPage());
+            Navigator.pushReplacement(context, route);
           }
         },
         child: Text(

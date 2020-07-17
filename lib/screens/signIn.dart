@@ -7,6 +7,7 @@ class SignIn extends StatefulWidget {
 }
 
 Positioned _goToSignUpPageBtn(BuildContext context) {
+
   return Positioned(
     left: 0,
     right: 0,
@@ -43,6 +44,8 @@ Positioned _goToSignUpPageBtn(BuildContext context) {
 }
 
 class _SignInState extends State<SignIn> {
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
